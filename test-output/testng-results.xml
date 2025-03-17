@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-17T09:36:54 IST" name="Default suite" finished-at="2025-03-17T09:40:39 IST" duration-ms="225203">
+    <groups>
+    </groups>
+    <test started-at="2025-03-17T09:36:54 IST" name="Default test" finished-at="2025-03-17T09:40:39 IST" duration-ms="225203">
+      <class name="TestPractice.PracticeAutomationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:36:54 IST" name="setUp" finished-at="2025-03-17T09:36:56 IST" duration-ms="2015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Page_with_three_Sliders_only()[pri:1, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:36:56 IST" name="home_Page_with_three_Sliders_only" finished-at="2025-03-17T09:37:02 IST" duration-ms="6337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Page_with_three_Sliders_only -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:02 IST" name="tearDown" finished-at="2025-03-17T09:37:03 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:03 IST" name="setUp" finished-at="2025-03-17T09:37:04 IST" duration-ms="1613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_page_with_three_Arrivals_only()[pri:2, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:04 IST" name="home_page_with_three_Arrivals_only" finished-at="2025-03-17T09:37:09 IST" duration-ms="4957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_page_with_three_Arrivals_only -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:09 IST" name="tearDown" finished-at="2025-03-17T09:37:10 IST" duration-ms="235" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:10 IST" name="setUp" finished-at="2025-03-17T09:37:11 IST" duration-ms="1572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_page_Images_in_Arrivals_should_navigate()[pri:3, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:11 IST" name="home_page_Images_in_Arrivals_should_navigate" finished-at="2025-03-17T09:37:18 IST" duration-ms="7367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_page_Images_in_Arrivals_should_navigate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:18 IST" name="tearDown" finished-at="2025-03-17T09:37:19 IST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:19 IST" name="setUp" finished-at="2025-03-17T09:37:20 IST" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_page_Arrivals_Images_Description()[pri:4, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:20 IST" name="home_page_Arrivals_Images_Description" finished-at="2025-03-17T09:37:27 IST" duration-ms="6620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_page_Arrivals_Images_Description -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:27 IST" name="tearDown" finished-at="2025-03-17T09:37:27 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:27 IST" name="setUp" finished-at="2025-03-17T09:37:29 IST" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_page_Arrivals_Images_Reviews()[pri:5, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:29 IST" name="home_page_Arrivals_Images_Reviews" finished-at="2025-03-17T09:37:37 IST" duration-ms="7727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_page_Arrivals_Images_Reviews -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:37 IST" name="tearDown" finished-at="2025-03-17T09:37:37 IST" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:37 IST" name="setUp" finished-at="2025-03-17T09:37:39 IST" duration-ms="1629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="homepage_Arrivals_Images_Add_to_Basket()[pri:6, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:39 IST" name="homepage_Arrivals_Images_Add_to_Basket" finished-at="2025-03-17T09:37:50 IST" duration-ms="11474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homepage_Arrivals_Images_Add_to_Basket -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:50 IST" name="tearDown" finished-at="2025-03-17T09:37:50 IST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:50 IST" name="setUp" finished-at="2025-03-17T09:37:52 IST" duration-ms="1581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items()[pri:7, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:37:52 IST" name="home_Arrivals_Add_to_Basket_Items" finished-at="2025-03-17T09:38:06 IST" duration-ms="13797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:06 IST" name="tearDown" finished-at="2025-03-17T09:38:06 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:06 IST" name="setUp" finished-at="2025-03-17T09:38:07 IST" duration-ms="1537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Coupon()[pri:8, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:07 IST" name="home_Arrivals_Add_to_Basket_Items_Coupon" finished-at="2025-03-17T09:38:21 IST" duration-ms="13061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Coupon -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:21 IST" name="tearDown" finished-at="2025-03-17T09:38:21 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:21 IST" name="setUp" finished-at="2025-03-17T09:38:22 IST" duration-ms="1507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450()[pri:9, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:22 IST" name="home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450" finished-at="2025-03-17T09:38:35 IST" duration-ms="13006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:35 IST" name="tearDown" finished-at="2025-03-17T09:38:36 IST" duration-ms="242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:36 IST" name="setUp" finished-at="2025-03-17T09:38:37 IST" duration-ms="1595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Remove_book()[pri:10, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:37 IST" name="home_Arrivals_Add_to_Basket_Items_Remove_book" finished-at="2025-03-17T09:38:48 IST" duration-ms="10910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Remove_book -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:48 IST" name="tearDown" finished-at="2025-03-17T09:38:48 IST" duration-ms="203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:48 IST" name="setUp" finished-at="2025-03-17T09:38:50 IST" duration-ms="1630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Add_book()[pri:11, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:38:50 IST" name="home_Arrivals_Add_to_Basket_Items_Add_book" finished-at="2025-03-17T09:39:00 IST" duration-ms="10431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Add_book -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:00 IST" name="tearDown" finished-at="2025-03-17T09:39:01 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:01 IST" name="setUp" finished-at="2025-03-17T09:39:02 IST" duration-ms="1650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price()[pri:12, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:02 IST" name="home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price" finished-at="2025-03-17T09:39:11 IST" duration-ms="8798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:11 IST" name="tearDown" finished-at="2025-03-17T09:39:11 IST" duration-ms="208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:11 IST" name="setUp" finished-at="2025-03-17T09:39:13 IST" duration-ms="1628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket()[pri:13, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:13 IST" name="home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket" finished-at="2025-03-17T09:39:23 IST" duration-ms="10375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:23 IST" name="tearDown" finished-at="2025-03-17T09:39:24 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:24 IST" name="setUp" finished-at="2025-03-17T09:39:25 IST" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition()[pri:14, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:25 IST" name="home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition" finished-at="2025-03-17T09:39:36 IST" duration-ms="10400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:36 IST" name="tearDown" finished-at="2025-03-17T09:39:36 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:36 IST" name="setUp" finished-at="2025-03-17T09:39:37 IST" duration-ms="1605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Check_out_functionality()[pri:15, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:37 IST" name="home_Arrivals_Add_to_Basket_Items_Check_out_functionality" finished-at="2025-03-17T09:39:50 IST" duration-ms="12289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_functionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:50 IST" name="tearDown" finished-at="2025-03-17T09:39:50 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:50 IST" name="setUp" finished-at="2025-03-17T09:39:52 IST" duration-ms="1616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway()[pri:16, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:39:52 IST" name="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway" finished-at="2025-03-17T09:40:06 IST" duration-ms="14050" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:40:06 IST" name="tearDown" finished-at="2025-03-17T09:40:06 IST" duration-ms="275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:40:06 IST" name="setUp" finished-at="2025-03-17T09:40:08 IST" duration-ms="1540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order()[pri:17, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:40:08 IST" name="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order" finished-at="2025-03-17T09:40:39 IST" duration-ms="31354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestPractice.PracticeAutomationTest@5b7a5baa]" started-at="2025-03-17T09:40:39 IST" name="tearDown" finished-at="2025-03-17T09:40:39 IST" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestPractice.PracticeAutomationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

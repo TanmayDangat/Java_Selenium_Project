@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\tdangat\AppData\Local\Temp\2\testng-eclipse-783175811\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items">home_Arrivals_Add_to_Basket_Items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Add_book">home_Arrivals_Add_to_Basket_Items_Add_book</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price">home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway">home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order">home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition">home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket">home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Check_out_functionality">home_Arrivals_Add_to_Basket_Items_Check_out_functionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Coupon">home_Arrivals_Add_to_Basket_Items_Coupon</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450">home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Arrivals_Add_to_Basket_Items_Remove_book">home_Arrivals_Add_to_Basket_Items_Remove_book</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_Page_with_three_Sliders_only">home_Page_with_three_Sliders_only</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_page_Arrivals_Images_Description">home_page_Arrivals_Images_Description</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_page_Arrivals_Images_Reviews">home_page_Arrivals_Images_Reviews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_page_Images_in_Arrivals_should_navigate">home_page_Images_in_Arrivals_should_navigate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="home_page_with_three_Arrivals_only">home_page_with_three_Arrivals_only</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="TestPractice.PracticeAutomationTest" class="method navigator-link" hash-for-method="homepage_Arrivals_Images_Add_to_Basket">homepage_Arrivals_Images_Add_to_Basket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestPractice.PracticeAutomationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Add_book">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Add_book -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Add_book</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Check_out_functionality">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Check_out_functionality -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_functionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Coupon">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Coupon -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Coupon</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450 -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Arrivals_Add_to_Basket_Items_Remove_book">
+                  </a> <!-- home_Arrivals_Add_to_Basket_Items_Remove_book -->
+                  <span class="method-name">home_Arrivals_Add_to_Basket_Items_Remove_book</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Page_with_three_Sliders_only">
+                  </a> <!-- home_Page_with_three_Sliders_only -->
+                  <span class="method-name">home_Page_with_three_Sliders_only</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_page_Arrivals_Images_Description">
+                  </a> <!-- home_page_Arrivals_Images_Description -->
+                  <span class="method-name">home_page_Arrivals_Images_Description</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_page_Arrivals_Images_Reviews">
+                  </a> <!-- home_page_Arrivals_Images_Reviews -->
+                  <span class="method-name">home_page_Arrivals_Images_Reviews</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_page_Images_in_Arrivals_should_navigate">
+                  </a> <!-- home_page_Images_in_Arrivals_should_navigate -->
+                  <span class="method-name">home_page_Images_in_Arrivals_should_navigate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_page_with_three_Arrivals_only">
+                  </a> <!-- home_page_with_three_Arrivals_only -->
+                  <span class="method-name">home_page_with_three_Arrivals_only</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homepage_Arrivals_Images_Add_to_Basket">
+                  </a> <!-- homepage_Arrivals_Images_Add_to_Basket -->
+                  <span class="method-name">homepage_Arrivals_Images_Add_to_Basket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\tdangat\AppData\Local\Temp\2\testng-eclipse-783175811\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestPractice.PracticeAutomationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order')
+data.setCell(0, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(0, 3, 31354);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway')
+data.setCell(1, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(1, 3, 14050);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'home_Arrivals_Add_to_Basket_Items')
+data.setCell(2, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(2, 3, 13797);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'home_Arrivals_Add_to_Basket_Items_Coupon')
+data.setCell(3, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(3, 3, 13061);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450')
+data.setCell(4, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(4, 3, 13006);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'home_Arrivals_Add_to_Basket_Items_Check_out_functionality')
+data.setCell(5, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(5, 3, 12289);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'homepage_Arrivals_Images_Add_to_Basket')
+data.setCell(6, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(6, 3, 11474);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'home_Arrivals_Add_to_Basket_Items_Remove_book')
+data.setCell(7, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(7, 3, 10910);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'home_Arrivals_Add_to_Basket_Items_Add_book')
+data.setCell(8, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(8, 3, 10431);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition')
+data.setCell(9, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(9, 3, 10400);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket')
+data.setCell(10, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(10, 3, 10375);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price')
+data.setCell(11, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(11, 3, 8798);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'home_page_Arrivals_Images_Reviews')
+data.setCell(12, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(12, 3, 7727);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'home_page_Images_in_Arrivals_should_navigate')
+data.setCell(13, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(13, 3, 7367);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'home_page_Arrivals_Images_Description')
+data.setCell(14, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(14, 3, 6620);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'home_Page_with_three_Sliders_only')
+data.setCell(15, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(15, 3, 6337);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'home_page_with_three_Arrivals_only')
+data.setCell(16, 2, 'TestPractice.PracticeAutomationTest')
+data.setCell(16, 3, 4957);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestPractice.PracticeAutomationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Page_with_three_Sliders_only</span>
+                <span class="method-start">2016 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">8357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8611 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_page_with_three_Arrivals_only</span>
+                <span class="method-start">10225 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15184 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">15420 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_page_Images_in_Arrivals_should_navigate</span>
+                <span class="method-start">16993 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24362 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">24595 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_page_Arrivals_Images_Description</span>
+                <span class="method-start">26262 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32884 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_page_Arrivals_Images_Reviews</span>
+                <span class="method-start">34850 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">42578 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42827 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homepage_Arrivals_Images_Add_to_Basket</span>
+                <span class="method-start">44456 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55932 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56188 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items</span>
+                <span class="method-start">57769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">71568 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">71833 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Coupon</span>
+                <span class="method-start">73370 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">86726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Coupon_value_less_than_450</span>
+                <span class="method-start">88233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">101483 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Remove_book</span>
+                <span class="method-start">103078 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">113990 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">114194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Add_book</span>
+                <span class="method-start">115824 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">126257 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">126485 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Book_Final_price</span>
+                <span class="method-start">128135 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">136935 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">137144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Update_Basket</span>
+                <span class="method-start">138772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">149149 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">149389 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Total_and_Sub_total_condition</span>
+                <span class="method-start">151002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">161404 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">161713 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_functionality</span>
+                <span class="method-start">163318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">175609 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">175940 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway</span>
+                <span class="method-start">177556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">191608 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">191884 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order</span>
+                <span class="method-start">193424 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">224780 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
