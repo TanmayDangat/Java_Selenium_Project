@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 public class PracticeAutomationTest {
 
 	WebDriver driver;
-	PracticeAutomation pa;
+	PracticeAutomationFact pa;
 	
 	@BeforeMethod
-	void setUp() {
+	public void setUp() {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		pa = new PracticeAutomation(driver);
+		pa = new PracticeAutomationFact(driver);
 	}
 	
 	@Test(priority=1)
@@ -47,7 +47,7 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
@@ -60,28 +60,29 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setDescriptionBtn();
-		String desc = driver.findElement(pa.description_xpath).getText();
+		String desc = pa.description_xpath.getText();
 		Assert.assertEquals(desc, "Product Description");
 	}
 	
 	@Test(priority=5)
-	void home_page_Arrivals_Images_Reviews() {
+	void home_page_Arrivals_Images_Reviews() throws InterruptedException {
 		driver.get("http://practice.automationtesting.in/");
 		pa.setShopMenu();
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setReviewBtn();
-		String rev = driver.findElement(pa.review_xpath).getText();
+		Thread.sleep(5000);
+		String rev = pa.review_xpath.getText();
 		Assert.assertEquals(rev,"Reviews");
 	}
 	
@@ -92,13 +93,13 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
 	}
 	
@@ -109,15 +110,15 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		WebElement proceedBtn = driver.findElement(pa.proceedCheckout_xpath);
+		WebElement proceedBtn = pa.proceedCheckout_xpath;
 		Assert.assertTrue(proceedBtn.isEnabled() && proceedBtn.isDisplayed());
 		pa.setProceedCheckout();
 	}
@@ -129,15 +130,15 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		WebElement proceedBtn = driver.findElement(pa.proceedCheckout_xpath);
+		WebElement proceedBtn = pa.proceedCheckout_xpath;
 		Assert.assertTrue(proceedBtn.isEnabled() && proceedBtn.isDisplayed());
 		pa.setProceedCheckout();
 		pa.setEnterCouponLink();
@@ -152,21 +153,21 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg2();
 		Assert.assertEquals(driver.getTitle(), "Thinking in HTML – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		WebElement proceedBtn = driver.findElement(pa.proceedCheckout_xpath);
+		WebElement proceedBtn = pa.proceedCheckout_xpath;
 		Assert.assertTrue(proceedBtn.isEnabled() && proceedBtn.isDisplayed());
 		pa.setProceedCheckout();
 		pa.setEnterCouponLink();
 		pa.setEnterCoupon("krishnasakinala");
 		pa.setApplyCoupon();
-		String errorMsg = driver.findElement(pa.errorMsg_xpath).getText();
+		String errorMsg = pa.errorMsg_xpath.getText();
 		String actualErrMsg = "The minimum spend for this coupon is ₹450.00.\r\n"
 				+ "";
 		Assert.assertEquals(errorMsg.replaceAll("\\p{C}", "").trim(), actualErrMsg.replaceAll("\\p{C}", "").trim());
@@ -179,13 +180,13 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
 		pa.setRemoveBook();
 	}
@@ -197,16 +198,16 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
 		pa.setAddBtn("4");
-		WebElement updateBtn = driver.findElement(pa.updateBtn_xpath);
+		WebElement updateBtn = pa.updateBtn_xpath;
 		Assert.assertTrue(updateBtn.isEnabled() && updateBtn.isDisplayed());
 		pa.setUpdateBtn();
 	}
@@ -218,18 +219,18 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		WebElement proceedBtn = driver.findElement(pa.proceedCheckout_xpath);
+		WebElement proceedBtn = pa.proceedCheckout_xpath;
 		Assert.assertTrue(proceedBtn.isEnabled() && proceedBtn.isDisplayed());
 		pa.setProceedCheckout();
-		WebElement finalPrice = driver.findElement(pa.totalPriceRow_xpath);
+		WebElement finalPrice = pa.totalPriceRow_xpath;
 		Assert.assertTrue(finalPrice.isDisplayed());
 	}
 	
@@ -240,16 +241,16 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
 		pa.setAddBtn("4");
-		WebElement updateBtn = driver.findElement(pa.updateBtn_xpath);
+		WebElement updateBtn = pa.updateBtn_xpath;
 		Assert.assertTrue(updateBtn.isEnabled() && updateBtn.isDisplayed());
 		pa.setUpdateBtn();
 	}
@@ -261,16 +262,16 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		String subTotalPrice = driver.findElement(pa.subTotalPrice_xpath).getText();
-		String finalPrice = driver.findElement(pa.finalPrice_xpath).getText();
+		String subTotalPrice = pa.subTotalPrice_xpath.getText();
+		String finalPrice = pa.finalPrice_xpath.getText();
 		String newSubTotalPrice = subTotalPrice.replaceAll("[^\\d.]","");
 		String newFinalPrice = finalPrice.replaceAll("[^\\d.]","");
 		double subTotalPriceInt = Double.parseDouble(newSubTotalPrice);
@@ -285,16 +286,16 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		String subTotalPrice = driver.findElement(pa.subTotalPrice_xpath).getText();
-		String finalPrice = driver.findElement(pa.finalPrice_xpath).getText();
+		String subTotalPrice = pa.subTotalPrice_xpath.getText();
+		String finalPrice = pa.finalPrice_xpath.getText();
 		String newSubTotalPrice = subTotalPrice.replaceAll("[^\\d.]","");
 		String newFinalPrice = finalPrice.replaceAll("[^\\d.]","");
 		double subTotalPriceInt = Double.parseDouble(newSubTotalPrice);
@@ -305,22 +306,22 @@ public class PracticeAutomationTest {
 	}
 	
 	@Test(priority=16)
-	void home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway() {
+	void home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway() throws InterruptedException {
 		driver.get("http://practice.automationtesting.in/");
 		pa.setShopMenu();
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		String subTotalPrice = driver.findElement(pa.subTotalPrice_xpath).getText();
-		String finalPrice = driver.findElement(pa.finalPrice_xpath).getText();
+		String subTotalPrice = pa.subTotalPrice_xpath.getText();
+		String finalPrice = pa.finalPrice_xpath.getText();
 		String newSubTotalPrice = subTotalPrice.replaceAll("[^\\d.]","");
 		String newFinalPrice = finalPrice.replaceAll("[^\\d.]","");
 		double subTotalPriceInt = Double.parseDouble(newSubTotalPrice);
@@ -330,11 +331,11 @@ public class PracticeAutomationTest {
 		pa.setEnterCouponLink();
 		pa.setEnterCoupon("krishnasakinala");
 		pa.setApplyCoupon();
-		String billingDetails = driver.findElement(pa.billingDetails_xpath).getText();
+		String billingDetails = pa.billingDetails_xpath.getText();
 		Assert.assertEquals(billingDetails, "Billing Details");
-		String orderDetails = driver.findElement(pa.orderDetails_xpath).getText();
+		String orderDetails = pa.orderDetails_xpath.getText();
 		Assert.assertEquals(orderDetails, "Your order");
-		String addDetails = driver.findElement(pa.addDetails_xpath).getText();
+		String addDetails = pa.addDetails_xpath.getText();
 		Assert.assertEquals(addDetails, "Additional Information");
 		pa.setFirstname("rahul");
 		pa.setLastname("patil");
@@ -349,6 +350,7 @@ public class PracticeAutomationTest {
 		pa.setStateDropdown();
 		pa.setStateDropdownSearch("Alabama");
 		pa.setPincode("35000");
+		Thread.sleep(5000);
 		pa.setPayment();
 	}
 	
@@ -359,27 +361,27 @@ public class PracticeAutomationTest {
 		pa.setHomeMenu();
 		int arrivalsLen = pa.setArrivals();
 		Assert.assertEquals(arrivalsLen, 3,"There are total " + arrivalsLen + " arrivals");
-		WebElement arrivalsImage = driver.findElement(pa.arrivalsImg_xpath);
+		WebElement arrivalsImage = pa.arrivalsImg_xpath;
 		Assert.assertTrue(arrivalsImage.isEnabled() && arrivalsImage.isDisplayed());
 		pa.setArrivalsImg();
 		Assert.assertEquals(driver.getTitle(), "Selenium Ruby – Automation Practice Site");
 		pa.setBasketBtn();
 		pa.setViewBasket();
-		String price = driver.findElement(pa.price_xpath).getText();
+		String price = pa.price_xpath.getText();
 		Assert.assertEquals(price, "Price");
-		String subTotalPrice = driver.findElement(pa.subTotalPrice_xpath).getText();
-		String finalPrice = driver.findElement(pa.finalPrice_xpath).getText();
+		String subTotalPrice = pa.subTotalPrice_xpath.getText();
+		String finalPrice = pa.finalPrice_xpath.getText();
 		String newSubTotalPrice = subTotalPrice.replaceAll("[^\\d.]","");
 		String newFinalPrice = finalPrice.replaceAll("[^\\d.]","");
 		double subTotalPriceInt = Double.parseDouble(newSubTotalPrice);
 		double finalPriceInt = Double.parseDouble(newFinalPrice);
 		Assert.assertTrue(subTotalPriceInt < finalPriceInt);
 		pa.setProceedCheckout();
-		String billingDetails = driver.findElement(pa.billingDetails_xpath).getText();
+		String billingDetails = pa.billingDetails_xpath.getText();
 		Assert.assertEquals(billingDetails, "Billing Details");
-		String orderDetails = driver.findElement(pa.orderDetails_xpath).getText();
+		String orderDetails = pa.orderDetails_xpath.getText();
 		Assert.assertEquals(orderDetails, "Your order");
-		String addDetails = driver.findElement(pa.addDetails_xpath).getText();
+		String addDetails = pa.addDetails_xpath.getText();
 		Assert.assertEquals(addDetails, "Additional Information");
 		pa.setFirstname("rahul");
 		pa.setLastname("patil");
@@ -394,11 +396,12 @@ public class PracticeAutomationTest {
 		pa.setStateDropdown();
 		pa.setStateDropdownSearch("Alabama");
 		pa.setPincode("35000");
+		Thread.sleep(5000);
 		pa.setPayment();
 		Thread.sleep(5000);
 		pa.setPlaceOrder();
 		Thread.sleep(5000);
-		String finalOrderDetails = driver.findElement(pa.finalOrderDetails_xpath).getText();
+		String finalOrderDetails = pa.finalOrderDetails_xpath.getText();
 		Assert.assertEquals(finalOrderDetails, "Order Details");
 		Thread.sleep(5000);
 	}

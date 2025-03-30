@@ -5,8 +5,8 @@
     <classes>
       <class name="TestPractice.PracticeAutomationTest">
         <methods>
+          <include name="home_page_Arrivals_Images_Reviews"/>
           <include name="setUp"/>
-          <include name="home_Arrivals_Add_to_Basket_Items_Check_out_Payment_Gateway_Place_order"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- TestPractice.PracticeAutomationTest -->
